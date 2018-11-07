@@ -5,13 +5,20 @@
   "description": "My first dashboard description goes here",
 
   "layout": {
-    "customJS" : ["jquery.peity.js"],
+    "customJS" : ["jquery.peity.js", "chart.js"],
     "widgets" : [
       {"row" : 1, "col" : 1, "width" : 2, "height" : 1, "widget" : "linegraph",    "job" : "sales-graph",         "config": "sales"},
       {"row" : 1, "col" : 3, "width" : 2, "height" : 2, "widget" : "image",        "job" : "picture-of-the-day",  "config": "picture"},
       {"row" : 1, "col" : 5, "width" : 2, "height" : 4, "widget" : "quotes",       "job" : "quotes",              "config": "quotes-famous"},
       {"row" : 2, "col" : 1, "width" : 2, "height" : 3, "widget" : "keyvaluelist", "job" : "issue-types",         "config": "issue-types"},
-      {"row" : 3, "col" : 2, "width" : 2, "height" : 2, "widget" : "calendar",     "job" : "google-calendar",     "config": "calendar-holidays"}
+      {"row" : 3, "col" : 2, "width" : 2, "height" : 2, "widget" : "calendar",     "job" : "google-calendar",     "config": "calendar-holidays"},
+      {"row" : 4, "col" : 2, "width" : 2, "height" : 2, "widget" : "project",      "job" : "project",              "config": "project"},
+      {"row" : 7, "col" : 1, "width" : 2, "height" : 2, "widget" : "point_scale",   "job" : "point_scale",             "config": "point_scale"},
+      {"row" : 6, "col" : 2, "width" : 2, "height" : 2, "widget" : "iteration_length",     "job" : "iteration_length",  "config": "iteration_length"},
+      {"row" : 5, "col" : 2, "width" : 2, "height" : 2, "widget" : "week_start_day",       "job" : "week_start_day",    "config": "week_start_day"},
+      {"row" : 8, "col" : 2, "width" : 2, "height" : 2, "widget" : "version",              "job" : "version",               "config": "version"},
+      {"row" : 9, "col" : 5, "width" : 2, "height" : 2, "widget" : "initial_velocity",     "job" : "initial_velocity",       "config": "initial_velocity"},
+      {"row" : 10, "col" : 1, "width" : 2, "height" : 2, "widget" : "number_of_done_iterations_to_show",     "job" : "number_of_done_iterations_to_show",   "config": "number_of_done_iterations_to_show"}
     ]
   },
 
@@ -23,7 +30,48 @@
       "maxEntries": 9,
       "widgetTitle": "Upcoming US Holidays"
     },
+    "picture": {
+      "interval": 12000,
+      "widgetTitle": "Picture of the Day",
+      "headshot": "headshot",
+      "name": "name",
+      "jobTitle": "jobTitle",
+      "url":"https://www.willowtreeapps.com/api/v1.0/profiles"
+    },
+      "project": {
+        "interval": 3600000,
+        "widgetTitle": "Project",
+        "name":"Test Project",
+        "project_type": "private",
+        "created_at":"2018-10-31T15:02:15Z",
+        "url":"https://www.pivotaltracker.com/services/v5/projects/2221411",
+        "id":2221411
+},
+"iteration_length": {
+  "interval": 3600000,
+  "widgetTitle": "Itertation Length"
+},
+"point_scale": {
+  "interval": 3600000,
+   "Point Scale":"2/4"
+},
+"number_of_done_iterations_to_show": {
+  "interval": 3600000,
+  "number_of_done_iterations_to_show":"12"
+},
 
+"week_start_day": {
+  "interval": 3600000,
+  "version":48
+},
+"number_of_done_iterations_to_show": {
+  "interval": 3600000,
+  "number_of_done_iterations_to_show":"12"
+},
+"initial_velocity": {
+  "interval": 3600000,
+  "initial_velocity":10
+},
     "issue-types": {
       "interval": 60000,
       "widgetTitle": "Issues Types in the Project",
@@ -33,13 +81,6 @@
         "database": "salesdb"
       }
     },
-
-    "picture": {
-      "interval": 60000,
-      "widgetTitle": "Nat Geo Picture of the Day",
-      "url": "http://photography.nationalgeographic.com/photography/photo-of-the-day"
-    },
-
     "quotes-famous": {
       "interval": 60000,
       "widgetTitle": "Famous Quotes",
@@ -83,10 +124,10 @@
       ],
       "limit": 3
     },
-
     "sales": {
       "interval": 60000,
       "widgetTitle": "Monthly Sales"
     }
   }
 }
+  

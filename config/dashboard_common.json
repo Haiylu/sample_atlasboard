@@ -7,7 +7,6 @@
        "maxEntries" : 9,
        "widgetTitle" : "Upcoming US Holidays"
      },
-
      "issue-types" : {
         "interval": 60000,
         "widgetTitle" : "Issues Types in the Project",
@@ -17,33 +16,71 @@
             "database": "salesdb"
         }
      },
-
-     "picture" : {
-        "interval": 60000,
-        "widgetTitle" : "Nat Geo Picture of the Day",
-        "url" : "http://photography.nationalgeographic.com/photography/photo-of-the-day"
+     "picture": {
+      "interval": 7000,
+      "widgetTitle": "Picture of the Day",
+      "headshot": "headshot.url",
+      "name": "name",
+      "jobTitle": "jobTitle",
+      "url":"https://www.willowtreeapps.com/api/v1.0/profiles"
      },
+      "project": {
+        "interval": 3600000,
+        "widgetTitle": "Project",
+        "name":"Test Project",
+        "project_type": "private",
+        "created_at":"2018-10-31T15:02:15Z",
+        "url":"https://www.pivotaltracker.com/services/v5/projects/2221411"
+},
+"iteration_length": {
+  "interval": 3600000,
+  "iteration_length": 1
+},
+"point_scale": {
+  "interval": 3600000,
+  "point_scale": "2/4"
+},
+"week_start_day": {
+  "interval": 3600000,
+  "week_start_day":"Monday"
+  },
+  "week_start_day": {
+    "interval": 3600000,
+    "version":48
+  },
+  "initial_velocity": {
+    "interval": 3600000,
+    "version":10
+  },
+  "project": {
+    "interval": 3600000,
+    "widgetTitle": "Project",
+    "name":"Test Project",
+    "project_type": "private",
+    "created_at":"2018-10-31T15:02:15Z",
+    "url":"https://www.pivotaltracker.com/services/v5/projects/2221411",
+    "id":2221411
+  },
+    "quotes-famous": {
+    "interval": 60000,
+    "widgetTitle" : "Famous Quotes",
+    "quotes" : [
+        {"quote" : "It's not that I'm so smart, it's just that I stay with problems longer.", "author" : "Albert Einstein"},
+        {"quote" : "Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.", "author" : "William Shakespeare"},
+        {"quote" : "Software built on pride and love of subject is superior to software built for profit.", "author" : "Ravi Simhambhatla"},
+        {"quote" : "If developers’ pains are Java and .NET, the antidote is dynamic languages and frameworks.", "author" : "Jeffrey Hammond"},
+        {"quote" : "Software is like sex: it's better when it's free.", "author" : "Linus Torvalds"},
+        {"quote" : "People enjoy the interaction on the Internet, and the feeling of belonging to a group that does something interesting: that's how some software projects are born.", "author" : "Linus Torvalds"},
+        {"quote" : "The ultimate search engine would basically understand everything in the world, and it would always give you the right thing.", "author" : "Larry Page"},
+        {"quote" : "Mathematics is the queen of the sciences and number theory is the queen of mathematics.", "author" : "Carl Friedrich Gauss"},
+        {"quote" : "Computer science is no more about computers than astronomy is about telescopes.", "author" : "Edsger Dijkstra"}
+    ],
+    "limit" : 3
+ },
 
-     "quotes-famous": {
-        "interval": 60000,
-        "widgetTitle" : "Famous Quotes",
-        "quotes" : [
-            {"quote" : "It's not that I'm so smart, it's just that I stay with problems longer.", "author" : "Albert Einstein"},
-            {"quote" : "Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.", "author" : "William Shakespeare"},
-            {"quote" : "Software built on pride and love of subject is superior to software built for profit.", "author" : "Ravi Simhambhatla"},
-            {"quote" : "If developers’ pains are Java and .NET, the antidote is dynamic languages and frameworks.", "author" : "Jeffrey Hammond"},
-            {"quote" : "Software is like sex: it's better when it's free.", "author" : "Linus Torvalds"},
-            {"quote" : "People enjoy the interaction on the Internet, and the feeling of belonging to a group that does something interesting: that's how some software projects are born.", "author" : "Linus Torvalds"},
-            {"quote" : "The ultimate search engine would basically understand everything in the world, and it would always give you the right thing.", "author" : "Larry Page"},
-            {"quote" : "Mathematics is the queen of the sciences and number theory is the queen of mathematics.", "author" : "Carl Friedrich Gauss"},
-            {"quote" : "Computer science is no more about computers than astronomy is about telescopes.", "author" : "Edsger Dijkstra"}
-        ],
-        "limit" : 3
-     },
-
-     "sales" : {
-        "interval": 60000,
-        "widgetTitle" : "Monthly Sales"
-      }
+ "sales" : {
+    "interval": 60000,
+    "widgetTitle" : "Monthly Sales"
   }
+}
 }
