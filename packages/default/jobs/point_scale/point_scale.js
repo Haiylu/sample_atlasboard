@@ -30,6 +30,7 @@ let created_at='created_at":"2018-10-31T15:02:15Z"';
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
+    var point_scale=info.point_scale;
    //var project=[];
    jobCallback(null, {url: url,point_scale:point_scale});
     /*
