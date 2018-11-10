@@ -26,6 +26,7 @@ let created_at='created_at":"2018-10-31T15:02:15Z"';
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
+    var iteration_length=info.iteration_length;
    //var project=[];
    jobCallback(null, {url: url,iteration_length:iteration_length});
     /*
