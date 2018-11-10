@@ -43,7 +43,7 @@ var options = {
   }
 };
 let url = 'https://www.pivotaltracker.com/services/v5/projects/2221411';
-let number_of_done_iterations_to_show ='12';
+//let number_of_done_iterations_to_show ='12';
 console.log("number_of_done_iterations_to_show");
 //let created_at='created_at":"2018-10-31T15:02:15Z"';
 //let created_at='created_at';
