@@ -14,7 +14,7 @@ var options = {
   }
 };
 let url = 'https://www.pivotaltracker.com/services/v5/projects/2221411';
-let initial_velocity='10';
+//let initial_velocity='10';
 /*
 
 let project_type='private';
