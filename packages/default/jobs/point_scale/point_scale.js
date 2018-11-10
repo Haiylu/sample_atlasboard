@@ -14,7 +14,6 @@ var options = {
   }
 };
 let url = 'https://www.pivotaltracker.com/services/v5/projects/2221411';
-//let point_scale='2/4';
 /*
 
 let project_type='private';
