@@ -30,6 +30,7 @@ let created_at='created_at":"2018-10-31T15:02:15Z"';
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
+    var initial_velocity=info.let initial_velocity;
    //var project=[];
    jobCallback(null, {url: url,initial_velocity:initial_velocity});
     /*
