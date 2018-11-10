@@ -45,7 +45,7 @@ var options = {
 let url = 'https://www.pivotaltracker.com/services/v5/projects/2221411';
 let project_type='private';
 console.log("project-type");
-let name='Test Project';
+//let name='Test Project';
 //let created_at='created_at":"2018-10-31T15:02:15Z"';
 //let created_at='created_at';
 let id='2221411';
@@ -63,6 +63,7 @@ var myLineChart = new Chart(ctx, {
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
+    var name=info.name;
    //var project=[];
    jobCallback(null, {url: url,name:name,id:id});
     /*
