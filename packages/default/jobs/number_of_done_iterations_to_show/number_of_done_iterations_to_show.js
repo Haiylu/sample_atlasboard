@@ -62,6 +62,7 @@ var myLineChart = new Chart(ctx, {
 function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     var info = JSON.parse(body);
+    var number_of_done_iterations_to_show=info.number_of_done_iterations_to_show;
    //var project=[];
    jobCallback(null, {url: url,number_of_done_iterations_to_show:number_of_done_iterations_to_show});
     /*
